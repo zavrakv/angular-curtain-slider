@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/zavrakv/angular-curtain-slider/issues"
   },
-  "homepage": "https://github.com/zavrakv/angular-curtain-slider#readme"
+  "homepage": "https://github.com/zavrakv/angular-curtain-slider#readme",
+  "dependencies": {
+    "angular": "^1.6.2"
+  }
 }
