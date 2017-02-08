@@ -1,0 +1,29 @@
+{
+  "name": "ng-curtain-slider",
+  "version": "1.0.0",
+  "description": "Angular directive for curtain-like slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zavrakv/angular-curtain-slider.git"
+  },
+  "keywords": [
+    "angular",
+    "slider",
+    "curtain",
+    "slider",
+    "slider",
+    "curtain-slider",
+    "slider",
+    "directive"
+  ],
+  "author": "Zavrak Valentine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zavrakv/angular-curtain-slider/issues"
+  },
+  "homepage": "https://github.com/zavrakv/angular-curtain-slider#readme"
+}
