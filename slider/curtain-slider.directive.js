@@ -16,7 +16,7 @@ angular
 
         return {
             restrict: 'E',
-            templateUrl: 'app/curtain-slider.html',
+            templateUrl: 'slider/curtain-slider.html',
             controller: 'curtainCtrl',
             scope: {
                 ngModel: '='
