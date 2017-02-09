@@ -21,7 +21,14 @@ angular
 
         return {
             restrict: 'E',
-            templateUrl: '../src/curtain-slider.html',
+            template:
+            '<div class="image-slider">' +
+                '<div class="curtain">' +
+                    '<img src="" alt="" class="curtainImg">' +
+                '</div>' +
+                '<img src="" alt="" class="coveredImg">' +
+                '<input type="range" class="range" step="0.1" ng-model="slider" ng-change="initSlider()">' +
+            '</div>',
             controller: 'curtainCtrl',
             controllerAs: 'vm',
             bindToController: true,
