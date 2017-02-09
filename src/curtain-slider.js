@@ -1,7 +1,9 @@
 /**
  * @desc curtain-like slider for angular apps
  *
- * @example <curtain-slider></curtain-slider>
+ * @example <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}"></curtain-slider>
+ * Inside your html create a tag <curtain-slider></curtain-slider>
+ * specify left and right image as an object inside attribute with routes to the img sources.
  */
 
 angular
