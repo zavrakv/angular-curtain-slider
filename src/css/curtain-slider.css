@@ -1,10 +1,8 @@
-body {
-  /*width: 400px;*/
-}
 .image-slider {
   position: relative;
   display: inline-block;
   overflow: hidden;
+  /*Modify slider width*/
   max-width: 320px;
 }
 .image-slider > div {
@@ -39,7 +37,7 @@ input {
 }
 input[type=range] {
   -webkit-appearance: none;
-  /* Hides the slider so that custom slider can be made */
+  /* Hides the src so that custom src can be made */
   width: 100%;
   /* Specific width is required for Firefox. */
   background: transparent;
@@ -55,7 +53,7 @@ input[type=range]:focus {
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
-  /* Hides the slider so custom styles can be added */
+  /* Hides the src so custom styles can be added */
   background: transparent;
   border-color: transparent;
   color: transparent;
