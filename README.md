@@ -21,12 +21,12 @@ Angular directive for curtain-like sliders
    
    ```HTML
    <!-- CSS goes here: -->
-   <link rel="stylesheet" href="../angular-curtain-slider/src/css/curtain-slider.min.css">   
+   <link rel="stylesheet" href="../ng-curtain-slider/src/css/curtain-slider.min.css">   
    ```
    Then, after you add your angular.js script, add this:
    ```HTML
    <!-- Route to the script -->
-   <script src="../angular-curtain-slider/src/curtain-slider.min.js"></script>
+   <script src="../ng-curtain-slider/src/curtain-slider.min.js"></script>
     ```
 
 3. In your html file add this directive:
