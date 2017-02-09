@@ -12,15 +12,16 @@ Angular directive for curtain-like sliders
 # Usage
 
 1. In your html specify route to the styles and script files like this:
+   
    ```HTML
    <!-- CSS goes here: -->
    <link rel="stylesheet" href="../angular-curtain-slider/src/css/curtain-slider.min.css">   
-   
+   ```
    Then, after you add your angular.js script, add this:
-   
+   ```HTML
    <!-- Route to the script -->
    <script src="../angular-curtain-slider/src/curtain-slider.min.js"></script>
-```
+    ```
 
 2. In your html file add this directive:
 
@@ -35,5 +36,5 @@ Angular directive for curtain-like sliders
 ```HTML
   <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}" 
                   step="1"></curtain-slider>
-  ```
+```
    Value of step varies from 0.1 (very smooth) to 100 (one swipe will open or close the curtain). Default step: 0.1
