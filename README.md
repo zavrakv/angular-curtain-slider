@@ -11,7 +11,13 @@ Angular directive for curtain-like sliders
 
 # Usage
 
-1. In your html specify route to the styles and script files like this:
+1. Add dependency injection in your app module:
+    
+   ```JavaScript
+   angular.module('app', ['ngCurtainSlider'])
+   ```
+   
+2. In your html specify route to the styles and script files like this:
    
    ```HTML
    <!-- CSS goes here: -->
@@ -23,15 +29,15 @@ Angular directive for curtain-like sliders
    <script src="../angular-curtain-slider/src/curtain-slider.min.js"></script>
     ```
 
-2. In your html file add this directive:
+3. In your html file add this directive:
 
    ```HTML
    <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}"></curtain-slider>
    ```
   
-3. Specify your own object inside `imgsrc` attribute. `left` represents the URL to the left image in slider, `right` - URL to the right  image in slider.
+4. Specify your own object inside `imgsrc` attribute. `left` represents the URL to the left image in slider, `right` - URL to the right  image in slider.
 
-4. If you want more discrete or more smooth behaviour of the slider - change the `step` attribute like this:
+5. If you want more discrete or more smooth behaviour of the slider - change the `step` attribute like this:
 
    ```HTML
    <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}" 
