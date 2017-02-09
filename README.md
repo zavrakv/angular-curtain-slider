@@ -25,16 +25,16 @@ Angular directive for curtain-like sliders
 
 2. In your html file add this directive:
 
-  ```HTML
-  <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}"></curtain-slider>
-  ```
+   ```HTML
+   <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}"></curtain-slider>
+   ```
   
 3. Specify your own object inside `imgsrc` attribute. `left` represents the URL to the left image in slider, `right` - URL to the right  image in slider.
 
 4. If you want more discrete or more smooth behaviour of the slider - change the `step` attribute like this:
 
-```HTML
-  <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}" 
-                  step="1"></curtain-slider>
-```
+   ```HTML
+   <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}" 
+                    step="1"></curtain-slider>
+   ```
    Value of step varies from 0.1 (very smooth) to 100 (one swipe will open or close the curtain). Default step: 0.1
