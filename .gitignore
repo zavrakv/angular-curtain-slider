@@ -39,3 +39,7 @@ jspm_packages
 # idea files
 
 .idea
+
+# gulp file
+
+gulpfile.js

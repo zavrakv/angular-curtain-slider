@@ -27,7 +27,8 @@ angular
             bindToController: true,
             scope: {
                 ngModel: '=',
-                imgsrc: '='
+                imgsrc: '=',
+                step: '='
             },
             link: link
         };
@@ -51,11 +52,15 @@ angular
 
             // Evaluate expression (object in our case) passed through attribute
             var imgSource = scope.$eval(attrs.imgsrc);
+            
+            // Evaluate step attribute and set it
+            $range.step = scope.$eval(attrs.step);
 
             // Assign image sources from the attribute values passed
             $curtainImg.src = imgSource.left;
             $coveredImg.src = imgSource.right;
 
+            
 
             // Browser identifiers
             var browser = {
