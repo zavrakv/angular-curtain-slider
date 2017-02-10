@@ -37,7 +37,7 @@ Angular directive for curtain-like sliders
   
 4. Specify your own object inside `imgsrc` attribute. `left` represents the URL to the left image in slider, `right` - URL to the right  image in slider.
 
-5. If you want more discrete or more smooth behaviour of the slider - change the `step` attribute like this:
+5. If you want more discrete or smooth behaviour of the slider - change the `step` attribute like this:
 
    ```HTML
    <curtain-slider imgsrc="{left: '../demo/img/cheetah.jpg', right: '../demo/img/tree.jpg'}" 
