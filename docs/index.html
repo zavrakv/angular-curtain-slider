@@ -5,7 +5,7 @@
     <title>Curtain Slider</title>
 
     <!-- CSS goes here: -->
-    <link rel="stylesheet" href="css/curtain-slider.css">
+    <link rel="stylesheet" href="css/curtain-slider.min.css">
 
     <!-- Specify route to angular.js file -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -16,15 +16,11 @@
 </head>
 <body ng-app="app" ng-controller="curtainCtrl as vm">
 
-<input class="simple-input" type="text" ng-model="vm.setLeft" placeholder="set left image path" ng-change="vm.evaluateLeft();">
-<input class="simple-input" type="text" ng-model="vm.setRight" placeholder="set right image path" ng-change="vm.evaluateRight();">
-<input class="simple-input" type="number" ng-model="vm.step" placeholder="set right image path" min="0.1" max="100"
+<input class="simple-input" type="text" ng-model="vm.setLeft" placeholder="left image URL" ng-change="vm.evaluateLeft();">
+<input class="simple-input" type="text" ng-model="vm.setRight" placeholder="right image URL" ng-change="vm.evaluateRight();">
+<input class="simple-input" type="number" ng-model="vm.step" placeholder="step" title="step" min="0.1" max="100"
        ng-change="vm.setStep()">
-<curtain-slider imgsrc="{left: vm.imgsrc.left, right: vm.imgsrc.right}" step="vm.sliderStep"></curtain-slider>
-<curtain-slider imgsrc="{left: 'img/astronaut.jpg', right: 'img/tree.jpg'}"></curtain-slider>
-<curtain-slider imgsrc="{left: 'img/cheetah.jpg', right: 'img/tree.jpg'}"></curtain-slider>
-<curtain-slider imgsrc="{left: 'img/cheetah.jpg', right: 'img/tree.jpg'}"></curtain-slider>
-<curtain-slider imgsrc="{left: 'img/cheetah.jpg', right: 'img/tree.jpg'}"></curtain-slider>
+<curtain-slider imgsrc="{left: vm.imgsrc.left, right: vm.imgsrc.right, step: vm.imgsrc.step}"></curtain-slider>
 
 </body>
 </html>

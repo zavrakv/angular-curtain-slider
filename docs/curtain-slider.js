@@ -20,8 +20,11 @@ angular
         vm.evaluateRight = evaluateRight;
         vm.setStep = setStep;
 
-        vm.imgsrc = {};
-        vm.step = 0.1;
+        vm.imgsrc = {
+            left: 'img/12.jpg',
+            right: 'img/13.jpg',
+            step: 1.1
+        };
 
         function evaluateLeft() {
             vm.imgsrc.left = vm.setLeft;
@@ -32,8 +35,8 @@ angular
         }
 
         function setStep() {
-            vm.sliderStep = vm.step;
-            console.log(vm.sliderStep);
+            vm.imgsrc.step = vm.step;
+            console.log(vm.imgsrc.step);
         }
     }
 
@@ -53,9 +56,8 @@ angular
             controllerAs: 'vm',
             bindToController: true,
             scope: {
-                ngModel: '=',
                 imgsrc: '=',
-                step: '&'
+                step: '='
             },
             link: link
         };
@@ -84,23 +86,9 @@ angular
                 console.log(imgSource);
                 $curtainImg.src = imgSource.left;
                 $coveredImg.src = imgSource.right;
+                $range.step = imgSource.step;
             });
 
-            scope.$watch(attrs.step, function () {
-                $range.step = scope.$eval(attrs.step);
-
-                // Evaluate step attribute and set it
-                console.log(attrs.step);
-            });
-
-
-
-
-
-            // Assign image sources from the attribute values passed
-
-
-            
 
             // Browser identifiers
             var browser = {
