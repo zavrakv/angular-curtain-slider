@@ -23,7 +23,7 @@ angular
         vm.imgsrc = {
             left: 'img/12.jpg',
             right: 'img/13.jpg',
-            step: 1.1
+            step: 0.1
         };
 
         function evaluateLeft() {
