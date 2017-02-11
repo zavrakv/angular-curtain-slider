@@ -1,5 +1,7 @@
-# angular-curtain-slider
-Angular directive for curtain-like sliders
+# Angular-curtain-slider
+Angular directive for curtain-like sliders. It is a slider, fit for demonstration of before and after results (watch the demo below)
+
+# [Demo](https://zavrakv.github.io/angular-curtain-slider/)
 
 # Requirements 
 
