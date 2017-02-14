@@ -1,5 +1,25 @@
+body {
+  padding-top: 20px;
+  text-align: center;
+}
+
+input[type=text], input[type=number] {
+  font-size: 14px;
+  height: 1.2em;
+  padding: 0.3em;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.72);
+  border-radius: 0.3em;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  box-shadow: .6px .6px 3px -1px black;
+}
+
 curtain-slider {
-  display: inline-block;
+  margin-top: 25px;
+  display: block;
   font-size:0
 }
 curtain-slider .image-slider {
@@ -7,7 +27,7 @@ curtain-slider .image-slider {
   display: inline-block;
   overflow: hidden;
   /*Modify slider width*/
-  max-width: 320px;
+  max-width: 600px;
 }
 curtain-slider .image-slider > div {
   position: absolute;
